@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="CSSreset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body>
+<div class="main">
+
+    <div class="cards">
+        <div class="frontOfCard">
+            <img src="images/card-logo.svg">
+            <p>0000 0000 0000 0000</p>
+            <div class="cardDetails">
+                <p>Jane Appleseed</p>
+                <p>00/00</p>
+            </div>
+
+        </div>
+        <div class="backOfCard">
+            <p>000</p>
+        </div>
+    </div>
+    <div class="forms">
+        <form>
+            <label class="label" for="name">Cardholder Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Jane Appleseed">
+
+            <label class="label" for="cardNumber">Card Number</label>
+            <input type="number" id="cardNumber" name="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
+
+            <div class="Date-CVC">
+                <div class="cardDate">
+                    <label class="label" for="month">Exp. Date (MM/YY)</label>
+                    <div>
+                        <input type="number" id="month" name="month" placeholder="MM" min="1" max="12">
+                        <input type="number" id="year" name="year" placeholder="YY">
+                    </div>
+                </div>
+                <div class="CVC">
+                    <label class="label" for="CVC">CVC</label>
+                    <input type="number" id="CVC" name="CVC" placeholder="e.g. 123" max="999">
+                </div>
+            </div>
+            <button type="submit" id="submit" name="submit">Confirm</button>
+
+        </form>
+    </div>
+
+</div>
+<script src="JS.js"></script>
+</body>
+</html>
